@@ -8,12 +8,12 @@ function listar(){
         dataType:"json",
         success: function (tabla) {
             if(tabla.cant != 0){
-                jQuery('#listaBancos').DataTable( {
+                jQuery('#listaMovimiento').DataTable( {
                     destroy: true,
                     columns: [
-                        { data: 'Monto' },
-                        { data: 'Movimiento' },
-                        { data: 'Observacion' },
+                        { data: 'movimiento' },
+                        { data: 'monto' },
+                        { data: 'fecha' },
                     ],
                     data: tabla.datos,
                     ordering:  false,

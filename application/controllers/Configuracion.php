@@ -61,6 +61,10 @@ class Configuracion extends CI_Controller {
         $this->load->model("configuracionl","Conf");
         echo json_encode($this->Conf->listarMisBancos());
     }
+    function listarMisMovimiento(){
+        $this->load->model("configuracionl","Conf");
+        echo json_encode($this->Conf->listarMisMovimiento());
+    }
     function RegistrarBanco(){
         $this->load->model("configuracionl","Conf");
         echo $this->Conf->RegistrarBanco($_POST);

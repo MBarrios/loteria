@@ -50,6 +50,24 @@ class Configuracionl extends CI_Model {
         }
         return $datos;
     }
+    function listarMisMovimiento(){
+        $id = $this->session->userdata("lote_oid");
+        $qr = $this->db->query("SELECT * FROM billetera_historico WHERE oidC=".$id." ");
+        $datos=array("cant"=>0);
+        if($qr->num_rows() >0){
+            $rs = $qr->result();
+            $rss=array();
+            foreach ($rs as $fila){
+                $rss[] = array(
+                    "movimiento"=>$fila->t_movimiento,
+                    "monto"=>$fila->monto,
+                    "fecha"=>$fila->fecha,
+                );
+            }
+            $datos = array("cant"=>1,"datos"=>$rss);
+        }
+        return $datos;
+    }
     function EliminarCta($datos){
         $datos = array_map('trim',$datos);
         $this -> db -> where('id', $datos["id"]);

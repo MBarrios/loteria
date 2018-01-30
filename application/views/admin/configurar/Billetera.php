@@ -57,11 +57,11 @@
                 <div class="col-md-12" id="respuesta">
                     <div class="row">
                         <div class="col-md-12">
-                            <table class="table table-striped table-responsive table-bordered" id="listaBancos">
+                            <table class="table table-striped table-responsive table-bordered" id="listaMovimiento">
                                 <thead><tr>
-                                    <th>Monto</th>
                                     <th>Movimiento</th>
-                                    <th>Observacion</th
+                                    <th>Monto</th>
+                                    <th>Fecha</th
                                 </tr></thead>
                                 <tbody id="cuerpo">
                                 <tr><td colspan="7">No posee Saldos Registrados</td></tr>
