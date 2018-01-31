@@ -2,8 +2,6 @@
 
 <div class="page-container">
     <!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
-    <?php $this->load->view("admin/incluir/menu"); ?>
-
     <div class="main-content">
 
         <?php $this->load->view("admin/incluir/barra");?>
