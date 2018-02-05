@@ -90,7 +90,5 @@ $nv = $this->session->userdata("lote_tipo");
                 </li>
 
             </ul>
-
         </div>
-
     </header>
